@@ -1,0 +1,93 @@
+/*Defining General Styles*/
+body {
+    background-color: rgb(255,255,255);
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: #210124;
+}
+
+
+/*Defining Landing Page Styles*/
+
+.landing-page {
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+.landing-title {
+    color: #210124;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*Defining Reference Section Styles*/
+
+.reference-card {
+    text-align: center;
+    padding: 7.5% 0;
+}
+
+.reference-image {
+    width: 150px;
+    height: 150px;
+    margin: 5% 0;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    object-position: center right;
+    border: 4px solid #210124;
+    padding: 2px;
+    border-top-color: #ff5722;
+    border-left-color: #ff5722;
+}
+
+
+.reference-card-header {
+    font-weight: bold;
+}
+
+.reference-card-caption {
+    font-style: italic;
+}
+
+.navigation-links-container{
+    margin: 2.5% 0 ;
+    font-family: 'Montserrat', sans-serif;
+    color: #210124;
+}
+
+.social-links-container{
+    margin: 5% 0 5% 0;
+}
+
+.social-link {
+    padding: 0 2.5%;
+}
+
+.reference-social-icon {
+    height: 5%;
+    width: 5%;
+}
+
+
+/*Defining Contact Form Styles*/
+.contact-form {
+    padding: 0 15% 0 15%;
+    width: 100%;
+}
+
+
+/*Defining Page Footer Styles*/
+footer {
+    text-align: center;
+}
+
+/* Back Home Button */
+.back-home-container{
+    text-align: center;
+}

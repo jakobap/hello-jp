@@ -1,2 +1,1 @@
-# hello-jp
-Jakobs personal website 
+## Jakob Personal Website

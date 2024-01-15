@@ -1,0 +1,107 @@
+{
+    "properties": ["date", "event title", "talk title", "description"],
+    "list_of_talks":[
+        {
+            "date": "2023-10-12",
+            "event_title": "Hack AI Campus",
+            "title": "Data Analytics on GCP 101",
+            "description": "Intro to data analytics tools on GCP, focussed on showcasing abilities using a hands on demo use case"
+        },
+        {
+            "date": "2023-10-10",
+            "event_title": "Project A Tech Days",
+            "title": "Building Beyon the Buzz II: Semantic Search via LLMs",
+            "description": "Discussing the ins and outs of LLM powered Data Management demoing a serverless retrieval augmented generation implementation"
+        },
+        {
+            "date": "2023-09-27",
+            "event_title": "DGAP & Bitkom: Künstliche Intelligenz und Außenpolitik",
+            "title": "Panel Discussion on Germany's position in the AI hype and how that affects foreign policy making",
+            "description": "Contributed insights about viable AI use cases and how we see it acceelerate industries, brainstormed about how these achievemnts could be utilized in the public sector"
+        },
+        {
+            "date": "2023-09-20",
+            "event_title": "Google AI First Accelerator Cohort Kick Off",
+            "title": "MLOps Lifecycle on GCP 101",
+            "description": "Hands on session to introduce Vertex AI tools to support all stages of the ML model lifecycle"
+        },
+        {
+            "date": "2023-09-19",
+            "event_title": "VECEE Meetup Berlin",
+            "title": "Generative AI and the hype cycle",
+            "description": "Evaluation of the hype around Generative AI, specifically focusing on what VC investors should look out for when investing in the space"
+        },
+        {
+            "date": "2023-09-12",
+            "event_title": "GfK Meetup: Maximizing ML Impact",
+            "title": "Building Beyond the Buzz I: LLMs, Langchain & Vertex AI",
+            "description": "Building best practices to operationalize LLMs, showcasing how to prepare data, write the right prompt, orchestrate LLMs and evaluate LLM predictions"
+        },
+        {
+            "date": "2023-07-23",
+            "event_title": "Generative AI Breakfast Merantix x Google: Where, When, What and How?",
+            "title": "Panel Discussion: GenAI & LLMs, Where, When, What and How",
+            "description": "Contributed with insights from real work implementation challenges, specifically regarding the selection of the right use cases"
+        },
+        {
+            "date": "2023-07-25",
+            "event_title": "AI Innovation: LLMs, Federated Learning and Slime Mold Algorithms",
+            "title": "Building Beyond the Buzz I: LLMs, Langchain & Vertex AI",
+            "description": "Building best practices to operationalize LLMs, showcasing how to prepare data, write the right prompt, orchestrate LLMs and evaluate LLM predictions"
+        },
+        {
+            "date": "2023-07-05",
+            "event_title": "Google Cloud Berlin Region Launch",
+            "title": "Data Analytics on GCP 101",
+            "description": "Intro to data analytics tools on GCP, focussed on showcasing abilities using a hands on demo use case"
+        },
+        {
+            "date": "2023-06-16",
+            "event_title": "Project A Data Days",
+            "title": "One decade of MLOps learnings from scaling ML to BNs of users",
+            "description": "Talk to underline the importante of MLOps for successful ML Projects and a comparison of best practices and common architecture patterns that power successful ML platforms on GCP"
+        },
+        {
+            "date": "2023-04-28",
+            "event_title": "Dida Machine Learning Conference",
+            "title": "One decade of MLOps learnings from scaling ML to BNs of users",
+            "description": "Talk to underline the importante of MLOps for successful ML Projects and a comparison of best practices and common architecture patterns that power successful ML platforms on GCP including a hands on demo"
+        },
+        {
+            "date": "2023-04-25",
+            "event_title": "/dev/cloud Developer Day Warsaw",
+            "title": "Serverless Two Tower Recommendation Engine",
+            "description": "Discussing the challenges of building various types of recommendation engines and demoing a Google Cloud Platform implemetation of a two-tower recommender"
+        },
+        {
+            "date": "2023-04-19",
+            "event_title": "Succeeding with Google Data Cloud & Modern BI",
+            "title": "Generative AI 101 on GCP",
+            "description": "High level intro to the GenAI offerig on Google Cloud Platform"
+        },
+        {
+            "date": "2023-03-22",
+            "event_title": "How ML6 & GfK scaled their Data Science platform on GCP @ Merantix AI Campus Berlin",
+            "title": "One decade of MLOps learnings from scaling ML to BNs of users",
+            "description": "Talk to underline the importante of MLOps for successful ML Projects and a comparison of best practices and common architecture patterns that power successful ML platforms on GCP"
+        },
+        {
+            "date": "2023-02-02",
+            "event_title": "MLOps Community Meetup Berlin",
+            "title": "A brief history of MLOps Research @ Google",
+            "description": "Lightning talk tracking the findings of the most notabe MLOps related research papers from the Google ecosystem"
+        },
+        {
+            "date": "2023-11-29",
+            "event_title": "/dev/cloud Developer Day Berlin",
+            "title": "Building a Serverless Two Tower Recommendation Engine",
+            "description": "Discussing the challenges of building various types of recommendation engines and demoing a Google Cloud Platform implemetation of a two-tower recommender"
+        },
+        {
+            "date": "2022-10-24",
+            "event_title": "Google Cloud Next '22 Munich",
+            "title": "Spark on Google Cloud",
+            "description": "Comparing options of running Spark workloads on GCP in traditional and serverless manner"
+        }
+    ]
+}
