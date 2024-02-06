@@ -5,8 +5,8 @@
             "project_title": "hello-jp",
             "project_description": "My own personal website. Built as a fun project and due to frustration and boredness with existing website builders.",
             "technologies": ["React", "Node.js", "Cloud Run", "HTML", "CSS", "GCP"],
-            "link": "",
-            "link_description": "Public repo coming soon"
+            "link": "https://github.com/jakobap/hello-jp",
+            "link_description": "GitHub"
         },
         {
             "project_title": "gwa",
@@ -34,7 +34,7 @@
             "project_description": "Making complex textual content more understandable is one of the key strength that LLMs bring us. My LLM based meeting transcript summarizer summarizes your meeting transcript for contributions per attendee and retrieves respective follow ups.",
             "technologies": ["Python", "PaLM 2", "Cloud Run", "GCP"],
             "link": "https://github.com/jakobap/MeetSummarizer",
-            "link_description": "Public Repo Coming Soon"
+            "link_description": "GitHub"
         },
         {
             "project_title": "Hack your Pipe",

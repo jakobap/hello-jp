@@ -2,22 +2,33 @@ import React from "react";
 import Card from '@mui/material/Card';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
+import Chip from '@mui/material/Chip';
 
 
 function ProjectCard(props) {
+    let linkElement;
+
+    if (props.link == "") {
+        linkElement = <p>Public repo coming soon</p>
+    } else {
+        linkElement = <a href={props.link}>{props.link_description}</a>
+    }
+
     return (
         <Card variant="outlined" className="project-card">
             <h1>{props.project_name}</h1>
             <p>{props.description}</p>
             <List>
                 {props.technologies.map((technology, index) => (
-                    <ListItem disablePadding>
-                        <p>{technology}</p>
-                    </ListItem>
+                    <Chip label={technology} variant="outlined" />
+                    // <ListItem disablePadding>
+                    //     <p>{technology}</p>
+                    // </ListItem>
                 ))}
             </List>
-            <a href={props.link}>{props.link_description}</a>
+
+            {linkElement}
+
         </Card>
     )
 }
