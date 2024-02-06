@@ -1,0 +1,54 @@
+{
+    "properties": ["project title", "project description", "technologies", "link", "link_description"],
+    "list_of_talks":[
+        {
+            "project_title": "hello-jp",
+            "project_description": "My own personal website. Built as a fun project and due to frustration and boredness with existing website builders.",
+            "technologies": ["React", "Node.js", "Cloud Run", "HTML", "CSS", "GCP"],
+            "link": "",
+            "link_description": "Public repo coming soon"
+        },
+        {
+            "project_title": "gwa",
+            "project_description": "My bet is that 2024 is going to be the year of LLM Agents. Thus I wanted to be in the game early and play around with Gemini function calling. In the end I build a reusable wrapper around the Google Calendar API. It allows you to manage your calendar via a natural language chat interface.",
+            "technologies": ["Python", "Gemini", "PaLM 2", "Cloud Run", "Langchain", "GCP"],
+            "link": "",
+            "link_description": "Public repo coming soon"
+        },
+        {
+            "project_title": "retrieval augmented agent",
+            "project_description": "RAG is fun, and so are agents. So why not do both together. Based on the previous RAG Q&A project I continued went the next step to not just extract info from your knowledge base, but also adjust it and let the LLM take action based on it.",
+            "technologies": ["Python", "Vertex Vextor Search", "Gemini", "PaLM 2", "GCP"],
+            "link": "https://github.com/NucleusEngineering/retrieval-aug-agent",
+            "link_description": "GitHub"
+        },
+        {
+            "project_title": "retrieval augmented generation q&A",
+            "project_description": "",
+            "technologies": ["Python", "Vertex Vextor Search", "Gemini", "PaLM 2", "GCP"],
+            "link": "",
+            "link_description": "Public repo coming soon"
+        },
+        {
+            "project_title": "Meeting Transcript Summarization",
+            "project_description": "Making complex textual content more understandable is one of the key strength that LLMs bring us. My LLM based meeting transcript summarizer summarizes your meeting transcript for contributions per attendee and retrieves respective follow ups.",
+            "technologies": ["Python", "PaLM 2", "Cloud Run", "GCP"],
+            "link": "https://github.com/jakobap/MeetSummarizer",
+            "link_description": "Public Repo Coming Soon"
+        },
+        {
+            "project_title": "Hack your Pipe",
+            "project_description": "",
+            "technologies": ["PubSub", "Cloud Run", "Dataflow", "BigQuery"],
+            "link": "https://github.com/NucleusEngineering/hack-your-pipe",
+            "link_description": "GitHub"
+        },
+        {
+            "project_title": "Serverless Two Tower Recommender Pipeline",
+            "project_description": "",
+            "technologies": ["Cloud Run", "Vertex Vextor Search", "Vertex AI", "GCP"],
+            "link": "",
+            "link_description": "Public repo coming soon"
+        }
+    ]
+}
