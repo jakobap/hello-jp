@@ -6,7 +6,7 @@ RUN npm install
 COPY . ./
 COPY server.js ./
 COPY package*.json ./
-# RUN npm run build
+RUN npm run build
 
 # # Step 2: Set up the Express server
 # FROM node:14
