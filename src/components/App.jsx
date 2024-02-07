@@ -1,5 +1,5 @@
-import {React, useEffect} from "react";
-import { BrowserRouter as Router, Route, Routes, useLocation} from 'react-router-dom';
+import {React} from "react";
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import LandingPage from "./LandingPage";
 import Footer from "./Footer";
 import ProjectsOverview from "./ProjectsOverview";
@@ -15,12 +15,7 @@ ReactGA.initialize(TRACKING_ID);
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
-    
-    // const location = useLocation();
-    // useEffect(() => {
-    //   ReactGA.pageview(location.pathname + location.search); 
-    // }, [location]);
-
+ 
     return (
 
         <ThemeProvider
