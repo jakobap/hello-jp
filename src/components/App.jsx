@@ -6,16 +6,15 @@ import ProjectsOverview from "./ProjectsOverview";
 import TalksOverview from "./TalksOverview";
 import NotFound from "./NotFound"
 import ReactGA from 'react-ga';
-
-
 import ThemeProvider from 'react-bootstrap/ThemeProvider'
 
-const TRACKING_ID = "G-BCWZLTX7X5"; // Replace with your actual ID
-ReactGA.initialize(TRACKING_ID);
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
- 
+    
+    const TRACKING_ID = "G-BCWZLTX7X5"; // Replace with your actual ID
+    ReactGA.initialize(TRACKING_ID);
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
     return (
 
         <ThemeProvider
