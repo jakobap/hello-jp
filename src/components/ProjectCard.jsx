@@ -17,6 +17,7 @@ function ProjectCard(props) {
         <Card variant="outlined" className="project-card">
             <h1>{props.project_name}</h1>
             <p>{props.description}</p>
+            <img className="project-card-img" src={props.img} alt={props.description} />
             <List>
                 {props.technologies.map((technology, index) => (
                     <Chip label={technology} variant="outlined" />

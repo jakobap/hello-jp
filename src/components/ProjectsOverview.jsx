@@ -21,6 +21,7 @@ function ProjectsOverview() {
                         <ProjectCard
                             project_name={project.project_title}
                             description={project.project_description}
+                            img={project.img}
                             technologies={project.technologies}
                             link={project.link}
                             link_description={project.link_description}
