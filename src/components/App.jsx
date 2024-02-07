@@ -11,8 +11,7 @@ import ThemeProvider from 'react-bootstrap/ThemeProvider'
 
 function App() {
     
-    const TRACKING_ID = "G-BCWZLTX7X5"; // Replace with your actual ID
-    ReactGA.initialize(TRACKING_ID);
+    ReactGA.initialize({trackingId: "G-BCWZLTX7X5", gaOptions: {siteSpeedSampleRate: 100}});
     ReactGA.pageview(window.location.pathname + window.location.search);
 
     return (
