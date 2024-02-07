@@ -4,11 +4,11 @@ import Grid from '@mui/material/Grid';
 import BackHomeButt from "./BackHomeButt";
 import ProjectCard from "./ProjectCard"
 import projectData from "../content/projects.json"
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 
 function ProjectsOverview() {
-    ReactGA.pageview("/projects");
+    ReactGA.send({ hitType: "pageview", page: "/projects"});
     return (
         <Container className="project-overview-container">
             <BackHomeButt />

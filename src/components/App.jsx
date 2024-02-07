@@ -5,7 +5,7 @@ import Footer from "./Footer";
 import ProjectsOverview from "./ProjectsOverview";
 import TalksOverview from "./TalksOverview";
 import NotFound from "./NotFound"
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import ThemeProvider from 'react-bootstrap/ThemeProvider'
 
 
@@ -15,7 +15,8 @@ function App() {
         ReactGA.initialize({ trackingId: "G-BCWZLTX7X5", gaOptions: { siteSpeedSampleRate: 100 } });
     }, []);
     
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    // ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.send({ hitType: "pageview", page: "/home"});
 
     return (
 
