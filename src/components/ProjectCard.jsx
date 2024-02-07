@@ -1,7 +1,6 @@
 import React from "react";
 import Card from '@mui/material/Card';
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
 import Chip from '@mui/material/Chip';
 
 
@@ -21,9 +20,6 @@ function ProjectCard(props) {
             <List>
                 {props.technologies.map((technology, index) => (
                     <Chip label={technology} variant="outlined" />
-                    // <ListItem disablePadding>
-                    //     <p>{technology}</p>
-                    // </ListItem>
                 ))}
             </List>
 
