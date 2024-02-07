@@ -1,5 +1,5 @@
-import {React} from "react";
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { React, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from "./LandingPage";
 import Footer from "./Footer";
 import ProjectsOverview from "./ProjectsOverview";
@@ -10,8 +10,11 @@ import ThemeProvider from 'react-bootstrap/ThemeProvider'
 
 
 function App() {
+
+    useEffect(() => {
+        ReactGA.initialize({ trackingId: "G-BCWZLTX7X5", gaOptions: { siteSpeedSampleRate: 100 } });
+    }, []);
     
-    ReactGA.initialize({trackingId: "G-BCWZLTX7X5", gaOptions: {siteSpeedSampleRate: 100}});
     ReactGA.pageview(window.location.pathname + window.location.search);
 
     return (
