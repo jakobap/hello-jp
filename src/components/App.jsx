@@ -12,7 +12,7 @@ import ThemeProvider from 'react-bootstrap/ThemeProvider'
 function App() {
 
     useEffect(() => {
-        ReactGA.initialize({ trackingId: "G-BCWZLTX7X5", gaOptions: { siteSpeedSampleRate: 100 } });
+        ReactGA.initialize([{ trackingId: "G-BCWZLTX7X5", gaOptions: { siteSpeedSampleRate: 100 } }]);
     }, []);
     
     // ReactGA.pageview(window.location.pathname + window.location.search);
