@@ -2,6 +2,8 @@ import React from "react";
 import TalkTable from "./TalkTable";
 import { Container } from "react-bootstrap";
 import BackHomeButt from "./BackHomeButt";
+import ReactGA from 'react-ga';
+
 
 function TalksOverview() {
     ReactGA.pageview("/projects");
