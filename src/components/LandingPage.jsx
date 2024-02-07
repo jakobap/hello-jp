@@ -1,6 +1,6 @@
 import React from "react";
 import ReferenceCard from "./ReferenceCard";
-import contentData from '../content/hello_world.json';
+import contentData from './content/hello_world.json';
 
 
 function LandingPage() {
