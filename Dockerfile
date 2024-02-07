@@ -5,7 +5,6 @@ COPY package*.json ./
 RUN npm install
 COPY . ./
 COPY server.js ./
-COPY package*.json ./
 RUN npm run build
 
 # # Step 2: Set up the Express server
