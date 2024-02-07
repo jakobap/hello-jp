@@ -12,13 +12,14 @@ import ThemeProvider from 'react-bootstrap/ThemeProvider'
 
 const TRACKING_ID = "G-BCWZLTX7X5"; // Replace with your actual ID
 ReactGA.initialize(TRACKING_ID);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
     
-    const location = useLocation();
-    useEffect(() => {
-      ReactGA.pageview(location.pathname + location.search); 
-    }, [location]);
+    // const location = useLocation();
+    // useEffect(() => {
+    //   ReactGA.pageview(location.pathname + location.search); 
+    // }, [location]);
 
     return (
 
