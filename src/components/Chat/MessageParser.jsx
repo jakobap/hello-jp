@@ -1,8 +1,14 @@
 import React from 'react';
 
+
 const MessageParser = ({ children, actions }) => {
   const parse = (message) => {
     console.log(message);
+
+    const model_response = actions.GenerateLLMResponse(message);
+
+    actions.SendResponse(model_response);
+
   };
 
   return (
