@@ -7,7 +7,7 @@ import Chip from '@mui/material/Chip';
 function ProjectCard(props) {
     let linkElement;
 
-    if (props.link == "") {
+    if (props.link === "") {
         linkElement = <p>Public repo coming soon</p>
     } else {
         linkElement = <a href={props.link}>{props.link_description}</a>
