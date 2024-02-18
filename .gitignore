@@ -5,4 +5,3 @@ website/node_modules/**
 **/conversation_venv/**
 **.json
 **/__pycache__/**
-.env

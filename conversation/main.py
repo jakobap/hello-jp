@@ -3,8 +3,12 @@ import os
 from LLMSession import LLMSession
 
 from flask import Flask, request
+from flask_cors import CORS
 
 app = Flask(__name__)
+
+CORS(app, origins="http://localhost:3000") 
+
 
 
 @app.route("/hw")
@@ -19,6 +23,8 @@ def generate_chat_response():
 
         prompt = user_query_str
         print(f"Prompt: {prompt}")
+
+        
 
         llm = LLMSession(model_name='text-bison@002')
         response = llm.llm_prediction(prompt=prompt)
