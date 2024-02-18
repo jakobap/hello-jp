@@ -1,21 +1,40 @@
 import React from 'react';
-// import callPredict from "./GCPModels.jsx";
 
 
 const ActionProvider = ({ createChatBotMessage, setState, children }) => {
 
+
+  const LLMServerRequest = (rawString) => {
+    const formData = new FormData();
+    formData.append('query', rawString);
+
+    fetch('https://hello-jp-llmserver-nbzldk2rfa-ew.a.run.app/generate_chat_response', {
+      method: 'POST',
+      body: formData
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text(); 
+      })
+      .then(data => {
+        console.log('Response from server:', data);
+        return data;
+      })
+      .catch(error => {
+        console.error('Error during POST request:', error);
+      });
+  };
+
   const GenerateLLMResponse = (user_message) => {
-    // const model_response = callPredict(user_message)
-    console.log(user_message)
-    const model_response = "Hello world back!"
-    console.log(model_response)
+    const prompt = user_message;
+    const model_response = LLMServerRequest(prompt);
     return model_response
   };
-  
+
   const SendResponse = (response_to_send) => {
-    console.log(response_to_send)
     const botMessage = createChatBotMessage(response_to_send);
-    console.log(botMessage)
     setState((prev) => ({
       ...prev,
       messages: [...prev.messages, botMessage],
@@ -26,7 +45,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
     <div>
       {React.Children.map(children, (child) => {
         return React.cloneElement(child, {
-          actions: {GenerateLLMResponse, SendResponse},
+          actions: { GenerateLLMResponse, SendResponse },
         });
       })}
     </div>
