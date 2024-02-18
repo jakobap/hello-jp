@@ -9,7 +9,7 @@ from dotenv import dotenv_values
 class LLMSession:
     def __init__(self, model_name: str):
         self.model_name = model_name
-        self.secrets = dotenv_values("./conversation/.env")
+        self.secrets = dotenv_values(".env")
         self.credentials, _ = google.auth.load_credentials_from_file(self.secrets['GCP_CREDENTIAL_FILE'])
         
         vertexai.init(project=self.secrets['GCP_PROJECT_ID'], location=self.secrets['GCP_REGION'], credentials=self.credentials)
