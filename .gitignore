@@ -1,5 +1,8 @@
-/node_modules
+website/node_modules/**
 .vscode/*
 .DS_Store
 /build
-
+**/conversation_venv/**
+**.json
+**/__pycache__/**
+.env
