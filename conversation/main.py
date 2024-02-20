@@ -1,5 +1,6 @@
 import os
 
+from jakob import jakob_prompt_temp
 from LLMSession import LLMSession
 
 from flask import Flask, request
@@ -20,10 +21,10 @@ def generate_chat_response():
     if request.method == 'POST':
         user_query_str = request.form['query']
 
-        prompt = user_query_str
+        prompt = jakob_prompt_temp.format(user_query=user_query_str)
         print(f"Prompt: {prompt}")
 
-        llm = LLMSession(model_name='text-bison@002')
+        llm = LLMSession(model_name='gemini-pro')
         response = llm.llm_prediction(prompt=prompt)
 
         return response
