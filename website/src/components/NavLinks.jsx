@@ -16,11 +16,11 @@ function NavigationLinks({toggleChat, showChat}) {
                     <Nav.Link href="/talks">My Talks</Nav.Link>
                 </Nav.Item>
             </Nav>
-            <Nav className="justify-content-center">
+            {/* <Nav className="justify-content-center">
                 <Nav.Item>
                     <Nav.Link onClick={toggleChat}>{showChat ? "Close Chat" : "Talk to me virtually"}</Nav.Link>
                 </Nav.Item>
-            </Nav>
+            </Nav> */}
 
         </Container>
 
