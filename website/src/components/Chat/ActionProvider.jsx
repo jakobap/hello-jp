@@ -7,8 +7,8 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
     const formData = new FormData();
     formData.append('query', rawString);
 
-    // const llmUrl = 'https://hello-jp-llmserver-stag-nbzldk2rfa-ew.a.run.app/'
-    const llmUrl = 'http://localhost:5000/generate_chat_response'
+    const llmUrl = 'https://hello-jp-llmserver-stag-nbzldk2rfa-ew.a.run.app/'
+    // const llmUrl = 'http://localhost:5000/generate_chat_response'
  
     try {
         const response = await fetch(llmUrl, {
