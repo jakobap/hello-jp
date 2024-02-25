@@ -46,13 +46,13 @@ function LandingPage() {
             </Container>
 
 
-            {/* {showChat && ( // Conditional rendering
+            {showChat && ( // Conditional rendering
                 <Chatbot
                     config={config}
                     messageParser={MessageParser}
                     actionProvider={ActionProvider}
                     convId={convId}
-                />)} */}
+                />)}
         </Container>
     )
 }

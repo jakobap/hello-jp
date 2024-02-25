@@ -6,9 +6,12 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
   const LLMServerRequest =  async (rawString) => {
     const formData = new FormData();
     formData.append('query', rawString);
+
+    // const llmUrl = 'https://hello-jp-llmserver-stag-nbzldk2rfa-ew.a.run.app/'
+    const llmUrl = 'http://localhost:5000/generate_chat_response'
  
     try {
-        const response = await fetch('https://hello-jp-llmserver-stag-nbzldk2rfa-ew.a.run.app/generate_chat_response', {
+        const response = await fetch(llmUrl, {
             method: 'POST',
             body: formData
         });
@@ -23,7 +26,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
  
     } catch (error) {
         console.error('Error during POST request:', error);
-        throw error; // Allow handling at a higher level 
+        throw error; 
     }
  };
 

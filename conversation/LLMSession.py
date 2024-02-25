@@ -17,7 +17,7 @@ class LLMSession:
     def llm_prediction(self,
                        prompt: str,
                        max_output_tokens: int = 1024,
-                       temperature: float = 0.2,
+                       temperature: float = 0.8,
                        top_p: float = 0.8, top_k: int = 40) -> dict:
 
         print(self.model_name)
@@ -38,6 +38,8 @@ class LLMSession:
             parameters = {
                 "max_output_tokens": max_output_tokens,
                 "temperature": temperature,
+                "top_p": top_p,
+                "top_k": top_k,
             }
             model = TextGenerationModel.from_pretrained(self.model_name)
             response = model.predict(prompt, **parameters)

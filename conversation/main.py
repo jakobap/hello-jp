@@ -24,7 +24,7 @@ def generate_chat_response():
         prompt = jakob_prompt_temp.format(user_query=user_query_str)
         print(f"Prompt: {prompt}")
 
-        llm = LLMSession(model_name='gemini-pro')
+        llm = LLMSession(model_name="gemini-pro")
         response = llm.llm_prediction(prompt=prompt)
 
         return response
