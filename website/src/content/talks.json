@@ -2,6 +2,24 @@
     "properties": ["date", "event title", "talk title", "description"],
     "list_of_talks":[
         {
+            "date": "2024-04-02",
+            "event_title": "LLM Explainability, Mitigating Hallucinations & Ensuring Ethical Practices: KI Park x Google",
+            "title":"How LLMs are like cats, and why that helps us to mitigate LLM hallucinations - Building Beyond the Buzz III",
+            "description": "A discussion of LLM hallucinations, where they come from and how to prevent them using Vector RAG and Graph RAG on GCP"
+        },
+        {
+            "date": "2024-03-27",
+            "event_title": "Build with AI - Google Developer Groups",
+            "title": "How LLMs are like cats, and why that helps us to mitigate LLM hallucinations - Building Beyond the Buzz III",
+            "description": "A discussion of LLM hallucinations, where they come from and how to prevent them using Vector RAG and Graph RAG on GCP"
+        },
+        {
+            "date": "2023-10-18",
+            "event_title": "/dev/cloud AI/ML Developer day",
+            "title": "Building Beyond the Buzz II: Semantic Search via LLMs",
+            "description": "Discussing the ins and outs of LLM powered Data Management demoing a serverless retrieval augmented generation implementation"
+        },
+        {
             "date": "2023-10-12",
             "event_title": "Hack AI Campus",
             "title": "Data Analytics on GCP 101",
@@ -10,7 +28,7 @@
         {
             "date": "2023-10-10",
             "event_title": "Project A Tech Days",
-            "title": "Building Beyon the Buzz II: Semantic Search via LLMs",
+            "title": "Building Beyond the Buzz II: Semantic Search via LLMs",
             "description": "Discussing the ins and outs of LLM powered Data Management demoing a serverless retrieval augmented generation implementation"
         },
         {
