@@ -2,6 +2,18 @@
     "properties": ["date", "event title", "talk title", "description"],
     "list_of_talks":[
         {
+            "date": "2024-05-16",
+            "event_title": "Cloud Summit Germany - North",
+            "title":"Welcome to the Gemini Era: How Ninetailed mastered the AI platform game.",
+            "description": "A firesite chat with Ninetailed CTO Alex Braunreuther on how Ninetailed used it's partnership with Google to build it's AI Platform and product feature suite around Vertex AI and Gemini."
+        },
+        {
+            "date": "2024-05-16",
+            "event_title": "Ninetailed Xperience Pulse",
+            "title":"Firesite Chat with Google's Jakob Pörschmann",
+            "description": "A firesite chat with Ninetailed CTO Alex Braunreuther on how Ninetailed used it's partnership with Google to build it's AI Platform and product feature suite around Vertex AI and Gemini."
+        },
+        {
             "date": "2024-04-02",
             "event_title": "LLM Explainability, Mitigating Hallucinations & Ensuring Ethical Practices: KI Park x Google",
             "title":"How LLMs are like cats, and why that helps us to mitigate LLM hallucinations - Building Beyond the Buzz III",
