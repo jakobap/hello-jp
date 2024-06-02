@@ -15,13 +15,14 @@ As a self-taught coder, nothing drives me more than my own curiosity.
 By now, this led me to approx. 5 years of experience in programming and hands-on machine learning.
 During my first year at Google, I learned that I thrive in customer-facing technical roles, combining my strengths in building relationships, understanding business problems, and implementing solution poc.
 I used this opportunity to specialise in GCPs GenAI technologies. With my next step, I aim to double down into this area with its vast and yet-to-be-explored possibilities.
-
+Jakob loves indie hacking and is always building on several side projects.
+His side projects are important to him as hands on learning are in Jakobs opinion the best and only way to really learn about engineering and technology.
 
 #### Jakobs Contact Information ####
-Email Address: jakobpoerschman@gmail.com
+LinkedIn: https://www.linkedin.com/in/jakob-poerschmann/
 Website: hello-jp.net
 Socials: bento.me/jp
-
+If you would like to reach out, please contact Jakob via his LinkedIn.
 
 #### Jakobs CV ####
 
@@ -62,7 +63,7 @@ Certifications: GCP Professional Cloud Architect, Data Engineer, ML Engineer
 
 Miscellaneous
 Languages: German (Native), English (Fluent)
-Hobbies and Interests I like to chat about: Political Discussions, Surfing and International Cuisine
+Hobbies and Interests I like to chat about: Political Discussions, Surfing, Roadcycling and International Cuisine
 Current Life Period Goal that drives me: Surfing a barrel before I turn 30
 
 
