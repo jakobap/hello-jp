@@ -1,6 +1,10 @@
+from numpy import full
 import vertexai
 from vertexai.language_models import TextGenerationModel
 from vertexai.preview.generative_models import GenerativeModel, FunctionDeclaration, Tool
+
+from vertexai.generative_models import GenerativeModel, Part, FinishReason
+import vertexai.preview.generative_models as generative_models
 
 import google.auth
 
@@ -23,7 +27,7 @@ class LLMSession:
         print(self.model_name)
 
         if self.model_name == "gemini-pro":
-            model = GenerativeModel("gemini-pro")
+            model = GenerativeModel("gemini-1.5-flash-001")
             response = model.generate_content(
                 prompt,
                 generation_config={
@@ -35,14 +39,37 @@ class LLMSession:
             )
 
         else:
-            parameters = {
-                "max_output_tokens": max_output_tokens,
-                "temperature": temperature,
-                "top_p": top_p,
-                "top_k": top_k,
+            
+            generation_config = {
+                "max_output_tokens": 8192,
+                "temperature": 1,
+                "top_p": 0.95,
             }
-            model = TextGenerationModel.from_pretrained(self.model_name)
-            response = model.predict(prompt, **parameters)
+
+            safety_settings = {
+                generative_models.HarmCategory.HARM_CATEGORY_HATE_SPEECH: generative_models.HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+                generative_models.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: generative_models.HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+                generative_models.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: generative_models.HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+                generative_models.HarmCategory.HARM_CATEGORY_HARASSMENT: generative_models.HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+            }
+
+            vertexai.init(project="jp-website-410806", location="europe-west1")
+            model = GenerativeModel(
+                "gemini-1.5-flash-001",
+            )
+            responses = model.generate_content(
+                [prompt],
+                generation_config=generation_config,
+                safety_settings=safety_settings,
+                stream=True,
+            )
+
+            full_response = ""
+
+            for response in responses:
+                full_response += response.text
+
+            return {"text": full_response}
 
         return self._extract_text_from_model_response(response)  
 
@@ -91,9 +118,12 @@ class LLMSession:
         return text_response
 
 if __name__ == "__main__":
+    import os
+    os.chdir("./conversation")
+
     print("++++ General Text Prompt ++++")
      # Test LLM Text Generation
     prompt = "Which is the city with the most bridges?"
-    llm = LLMSession(model_name='text-bison@002')
+    llm = LLMSession(model_name='gemini-1.5-flash-001')
     response = llm.llm_prediction(prompt=prompt)
     print(response)
