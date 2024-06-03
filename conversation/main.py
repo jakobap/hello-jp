@@ -23,6 +23,10 @@ def hello_world():
     name = os.environ.get("NAME", "World")
     return f"Hello {name}!"
 
+@app.route('/wakeup', methods=['GET'])
+def wakeup():
+    return "Good Morning", 200
+
 @app.route('/generate_chat_response', methods=['POST'])
 def generate_chat_response():
     if request.method == 'POST':
