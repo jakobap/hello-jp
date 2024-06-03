@@ -7,7 +7,8 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
     const formData = new FormData();
     formData.append('query', rawString);
 
-    const llmUrl = 'https://hello-jp-llmserver-stag-nbzldk2rfa-ew.a.run.app'
+    const llmUrl = 'https://hello-jp-llmserver-nbzldk2rfa-ew.a.run.app'
+    // const llmStagingUrl = 'https://hello-jp-llmserver-stag-nbzldk2rfa-ew.a.run.app'
     // const llmUrl = 'http://localhost:5000'
  
     try {
