@@ -3,7 +3,7 @@ import 'react-chatbot-kit/build/main.css'
 import "./Index.css"
 import "./Chat/Chat.css"
 
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import ReferenceCard from "./ReferenceCard.jsx";
 import contentData from '../content/hello_world.json';
 
@@ -27,6 +27,31 @@ function LandingPage() {
         setShowChat(!showChat);
     };
 
+    useEffect(() => {
+        const wakeUpEndpoints = [
+          "https://hello-jp-llmserver-stag-nbzldk2rfa-ew.a.run.app/wakeup",
+          "https://hello-jp-llmserver-nbzldk2rfa-ew.a.run.app/wakeup",
+        ];
+    
+        const wakeUpService = async (url) => {
+          try {
+            const response = await fetch(url);
+    
+            if (!response.ok) {
+              throw new Error(
+                `Failed to wake up ${url}: HTTP error! status: ${response.status}`
+              );
+            }
+    
+            console.log(`Successfully woke up ${url}:`, response);
+          } catch (error) {
+            console.error(error.message); // Log the specific error message
+          }
+        };
+    
+        wakeUpEndpoints.forEach(wakeUpService); // Wake up each service
+      }, []);
+    
     return (
         <Container className="landing-page" id="landing-page">
             <ReferenceCard name={contentData.title} caption={contentData.description} />
