@@ -27,7 +27,7 @@ build-prod:
 		--tag $$(gcloud config get-value artifacts/location)-docker.pkg.dev/jp-website-410806/hello-jp-images/hello-jp-website:latest-prod
 
 deploy-prod:
-		gcloud run hello-jp-serv-prod \
+		gcloud run deploy hello-jp-serv-prod \
 			--image $$(gcloud config get-value artifacts/location)-docker.pkg.dev/jp-website-410806/hello-jp-images/hello-jp-website:latest-prod \
 			--region europe-west1 \
 			--allow-unauthenticated
