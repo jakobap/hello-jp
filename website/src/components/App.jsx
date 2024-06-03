@@ -7,7 +7,7 @@ import TalksOverview from "./TalksOverview";
 import NotFound from "./NotFound"
 import ReactGA from 'react-ga4';
 import ThemeProvider from 'react-bootstrap/ThemeProvider'
-
+import { analytics } from "./Firebase/FirebaseConfig.jsx";
 
 function App() {
 

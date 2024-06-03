@@ -5,10 +5,14 @@ import BackHomeButt from "./BackHomeButt";
 import ProjectCard from "./ProjectCard"
 import projectData from "../content/projects.json"
 import ReactGA from 'react-ga4';
+import { getAnalytics, logEvent } from "firebase/analytics";
 
 
 function ProjectsOverview() {
     ReactGA.send({ hitType: "pageview", page: "/projects"});
+    const analytics = getAnalytics();
+    logEvent(analytics, 'projects-pageview');
+    
     return (
         <Container className="project-overview-container">
             <BackHomeButt />
