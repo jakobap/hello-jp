@@ -15,8 +15,7 @@ import google.auth
 
 app = Flask(__name__)
 
-CORS(app, origins=["http://localhost:3000", "https://hello-jp-serv-stag-nbzldk2rfa-ew.a.run.app", "https://hello-jp-serv-prod-nbzldk2rfa-ew.a.run.app", "https://hello-jp.net", "https://jakobap.com", "https://jakobpoerschmann.com"]) 
-
+CORS(app)
 
 @app.route("/hw")
 def hello_world():
