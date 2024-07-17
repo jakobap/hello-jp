@@ -7,3 +7,4 @@ node_modules/*
 **/conversation_venv/**
 **.json
 **/__pycache__/**
+.venv/  
