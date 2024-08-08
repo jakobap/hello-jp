@@ -2,6 +2,14 @@
     "properties": ["project title", "project description", "technologies", "link", "link_description"],
     "list_of_talks":[
         {
+            "project_title": "graph2nosql",
+            "project_description": "A simple Python interface to store and manage knowledge graphs in a regular NoSQL DB. Small side project to get rid of unnessesary Graph DB pain.",
+            "img": "",
+            "technologies": ["Python", "Firestore"],
+            "link": "https://github.com/jakobap/graph2nosql",
+            "link_description": "GitHub"
+        },
+        {
             "project_title": "einfach-vergabe.de",
             "project_description": "AI tool to radically simplify the German tender application process for applicant companies by screening tender docs.",
             "img": "https://storage.cloud.google.com/hello-jp-resources/images/einfach-vergabe-screenshot.png",
