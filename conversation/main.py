@@ -2,12 +2,14 @@ import os
 import json
 import datetime
 
-from jakob import jakob_prompt_temp
+import jakob
 from LLMSession import LLMSession
 
 from flask import Flask, request
 from flask_cors import CORS
 from dotenv import dotenv_values
+
+from langfuse.decorators import observe, langfuse_context
 
 from google.cloud import pubsub_v1
 import google.auth
@@ -26,18 +28,25 @@ def hello_world():
 def wakeup():
     return "Good Morning", 200
 
+@observe()
 @app.route('/generate_chat_response', methods=['POST'])
 def generate_chat_response():
     if request.method == 'POST':
+        secrets = dotenv_values(".env")
+        os.environ["LANGFUSE_SECRET_KEY"] = str(secrets["LANGFUSE_SECRET_KEY"])
+        os.environ["LANGFUSE_PUBLIC_KEY"] = str(secrets["LANGFUSE_PUBLIC_KEY"])
+        os.environ["LANGFUSE_HOST"] = "https://cloud.langfuse.com"
+
         user_query_str = request.form['query']
 
-        prompt = jakob_prompt_temp.format(user_query=user_query_str)
+        prompt = jakob.JAKOB_QUERY.format(user_query=user_query_str)
         print(f"Prompt: {prompt}")
 
-        llm = LLMSession(model_name='gemini-1.5-flash-001')
-        response = llm.llm_prediction(prompt=prompt)
+        llm = LLMSession(model_name='gemini-1.5-flash-001', system_message=jakob.JAKOB_SYSTEM)
+        response = llm.generate(client_query_string=prompt)
 
-        _bq_trace(user_query_str, prompt, response)
+        # _bq_trace(user_query_str, prompt, response)
+        langfuse_context.flush()
         return response
     else:
         return 'Only POST requests are supported.'
