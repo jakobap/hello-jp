@@ -2,9 +2,16 @@
     "properties": ["project title", "project description", "technologies", "link", "link_description"],
     "list_of_talks":[
         {
+            "project_title": "graphrag-light",
+            "project_description": "A serverless optimmized implementation of Graph RAG. Making use of graph2nosql as graph storage, PubSub as paralelization message queue and Cloud Run as serverless container runtime.",
+            "img": "",
+            "technologies": ["Gemini", "Cloud Run", "PubSub", "Python", "Firestore", "GCP", "Langfuse"],
+            "link": "",
+            "link_description": "https://storage.cloud.google.com/hello-jp-resources/images/einfach-vergabe-screenshot.png"
+        },
+        {
             "project_title": "graph2nosql",
             "project_description": "A simple Python interface to store and manage knowledge graphs in a regular NoSQL DB. Small side project to get rid of unnessesary Graph DB pain.",
-            "img": "",
             "technologies": ["Python", "Firestore"],
             "link": "https://github.com/jakobap/graph2nosql",
             "link_description": "GitHub"
