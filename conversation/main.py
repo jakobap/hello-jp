@@ -45,31 +45,11 @@ def generate_chat_response():
         llm = LLMSession(model_name='gemini-1.5-flash-001', system_message=jakob.JAKOB_SYSTEM)
         response = llm.generate(client_query_string=prompt)
 
-        # _bq_trace(user_query_str, prompt, response)
         langfuse_context.flush()
         return response
     else:
         return 'Only POST requests are supported.'
 
-def _bq_trace(query, prompt, model_response) -> None:
-    secrets = dotenv_values(".env")
-    credentials, _ = google.auth.load_credentials_from_file(secrets['GCP_CREDENTIAL_FILE'])
-
-    message = {
-        "timestamp": str(datetime.datetime.now()),
-        "query": query,
-        "prompt": prompt,
-        "model_response": model_response
-    }
-
-    publisher = pubsub_v1.PublisherClient(credentials=credentials)
-
-    message_json = json.dumps(message)
-    message_json_encoded = message_json.encode("utf-8")
-
-    future = publisher.publish(str(secrets['PUBSUB_TOPIC_PATH']), message_json_encoded)
-    print(f"Published messages to {secrets['PUBSUB_TOPIC_PATH']}: {future.result()}")
-    return None
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
