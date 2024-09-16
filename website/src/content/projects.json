@@ -4,7 +4,7 @@
         {
             "project_title": "graphrag-light",
             "project_description": "A serverless optimmized implementation of Graph RAG. Making use of graph2nosql as graph storage, PubSub as paralelization message queue and Cloud Run as serverless container runtime.",
-            "img": "https://storage.cloud.google.com/hello-jp-resources/images/graphrag-archi.png",
+            "img": "https://storage.googleapis.com/hello-jp-resources/images/graphrag-archi.png",
             "technologies": ["Gemini", "Cloud Run", "PubSub", "Python", "Firestore", "GCP", "Langfuse"],
             "link": "https://github.com/jakobap/graphrag-light",
             "link_description": "https://storage.cloud.google.com/hello-jp-resources/images/einfach-vergabe-screenshot.png"
@@ -12,7 +12,7 @@
         {
             "project_title": "graph2nosql",
             "project_description": "A simple Python interface to store and manage knowledge graphs in a regular NoSQL DB. Small side project to get rid of unnessesary Graph DB pain.",
-            "img": "https://storage.cloud.google.com/hello-jp-resources/images/graph-to-nosql.png",
+            "img": "https://storage.googleapis.com/hello-jp-resources/images/graph-to-nosql.png",
             "technologies": ["Python", "Firestore"],
             "link": "https://github.com/jakobap/graph2nosql",
             "link_description": "GitHub"
@@ -20,7 +20,7 @@
         {
             "project_title": "einfach-vergabe.de",
             "project_description": "AI tool to radically simplify the German tender application process for applicant companies by screening tender docs.",
-            "img": "https://storage.cloud.google.com/hello-jp-resources/images/einfach-vergabe-screenshot.png",
+            "img": "https://storage.googleapis.com/hello-jp-resources/images/einfach-vergabe-screenshot.png",
             "technologies": ["React", "Node.js", "Cloud Run", "HTML", "CSS", "GCP", "Langchain", "Gemini"],
             "link": "https://einfach-vergabe.de/",
             "link_description": "Website"
@@ -28,7 +28,7 @@
         {
             "project_title": "hello-jp",
             "project_description": "My personal website. Built as a fun project and due to frustration and boredness with existing website builders.",
-            "img": "https://storage.cloud.google.com/hello-jp-resources/images/hello-jp.png",
+            "img": "https://storage.googleapis.com/hello-jp-resources/images/hello-jp.png",
             "technologies": ["React", "Node.js", "Cloud Run", "HTML", "CSS", "GCP"],
             "link": "https://github.com/jakobap/hello-jp",
             "link_description": "GitHub"
@@ -36,7 +36,7 @@
         {
             "project_title": "Gemini Workspace Agent (gwa)",
             "project_description": "My bet is that 2024 is going to be the year of LLM Agents. Thus I wanted to be in the game early and play around with Gemini function calling. In the end I build a reusable wrapper around the Google Calendar API. It allows you to manage your calendar via a natural language chat interface.",
-            "img": "https://storage.cloud.google.com/hello-jp-resources/images/gwa.png",
+            "img": "https://storage.googleapis.com/hello-jp-resources/images/gwa.png",
             "technologies": ["Python", "Gemini", "PaLM 2", "Cloud Run", "Langchain", "GCP"],
             "link": "",
             "link_description": "Public repo coming soon"
@@ -44,7 +44,7 @@
         {
             "project_title": "Retrieval Augmented Agent",
             "project_description": "RAG is fun, and so are agents. So why not do both together. Based on the previous RAG Q&A project I continued went the next step to not just extract info from your knowledge base, but also adjust it and let the LLM take action based on it.",
-            "img": "https://storage.cloud.google.com/hello-jp-resources/images/raa_architecture.png",
+            "img": "https://storage.googleapis.com/hello-jp-resources/images/raa_architecture.png",
             "technologies": ["Python", "Vertex Vextor Search", "Gemini", "PaLM 2", "GCP"],
             "link": "https://github.com/NucleusEngineering/retrieval-aug-agent",
             "link_description": "GitHub"
@@ -52,7 +52,7 @@
         {
             "project_title": "Meeting Transcript Summarization",
             "project_description": "Making complex textual content more understandable is one of the key strength that LLMs bring us. My LLM based meeting transcript summarizer summarizes your meeting transcript for contributions per attendee and retrieves respective follow ups.",
-            "img": "https://storage.cloud.google.com/hello-jp-resources/images/summarizer_arch.png",
+            "img": "https://storage.googleapis.com/hello-jp-resources/images/summarizer_arch.png",
             "technologies": ["Python", "PaLM 2", "Cloud Run", "GCP"],
             "link": "https://github.com/jakobap/MeetSummarizer",
             "link_description": "GitHub"
@@ -60,7 +60,7 @@
         {
             "project_title": "Hack your Pipe",
             "project_description": "A deep dive into best practice architectures for data engineering and machine learning engineering. Different requirements need optimized architectures with completely different toolsets. This workshop discusses the ups and downs of reusable archietcture patterns on GCP.",
-            "img": "https://storage.cloud.google.com/hello-jp-resources/images/hyp_architecture.png",
+            "img": "https://storage.googleapis.com/hello-jp-resources/images/hyp_architecture.png",
             "technologies": ["PubSub", "Cloud Run", "Dataflow", "BigQuery"],
             "link": "https://github.com/NucleusEngineering/hack-your-pipe",
             "link_description": "GitHub"
@@ -68,7 +68,7 @@
         {
             "project_title": "Serverless Two Tower Recommender Pipeline",
             "project_description": "Recommendation problems are at the core of many data science problems. This project implements a two-tower recommender architecture using extremely high performant and mostly serverless tools. This results in highest recommendation quality at minimal latency and cost.",
-            "img": "https://storage.cloud.google.com/hello-jp-resources/images/two_tower_arch.png",
+            "img": "https://storage.googleapis.com/hello-jp-resources/images/two_tower_arch.png",
             "technologies": ["Cloud Run", "Vertex Vextor Search", "Vertex AI", "GCP"],
             "link": "",
             "link_description": "Public repo coming soon"
