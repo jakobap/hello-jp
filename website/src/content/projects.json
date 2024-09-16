@@ -6,7 +6,7 @@
             "project_description": "A serverless optimmized implementation of Graph RAG. Making use of graph2nosql as graph storage, PubSub as paralelization message queue and Cloud Run as serverless container runtime.",
             "img": "https://storage.cloud.google.com/hello-jp-resources/images/graphrag-archi.png",
             "technologies": ["Gemini", "Cloud Run", "PubSub", "Python", "Firestore", "GCP", "Langfuse"],
-            "link": "",
+            "link": "https://github.com/jakobap/graphrag-light",
             "link_description": "https://storage.cloud.google.com/hello-jp-resources/images/einfach-vergabe-screenshot.png"
         },
         {

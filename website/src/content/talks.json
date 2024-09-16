@@ -2,6 +2,30 @@
     "properties": ["date", "event title", "talk title", "description"],
     "list_of_talks":[
         {
+            "date": "2024-10-02",
+            "event_title": "Unstructured Data Meetup Berlin",
+            "title":"This is why you won't use a Graph Database every again.",
+            "description": "Talking about graph2nosql, a python interface to store your knowledge graph in your favourite NoSQL DB. No more GraphDBs and cyper exploding your stack and requiring new skills."
+        },
+        {
+            "date": "2024-09-19",
+            "event_title": "Project A Packon 2024",
+            "title":"They upgrade their RAG systems with this one weird trick. Vector DB companies hate them!",
+            "description": "In this talk, we will find out whether text embedding RAG is actually dead. We will explore Graph RAG's advantages and disadvantages. Let’s also discuss implementation strategies and compare costs and build your understanding so you know where to get started."
+        },
+        {
+            "date": "2024-09-19",
+            "event_title": "DMEXCO 2024",
+            "title":"Modern marketing measurement with Supermetrics and Google Cloud",
+            "description": "Discussing the Data Engineering challenges in marketing measurement and how to solve it using the Google's Modern Measurement Playbook and Google Cloud telemetry infrastructure."
+        },
+        {
+            "date": "2024-09-16",
+            "event_title": "Multimodal Generative AI: Opportunities, Challenges and Future Directions",
+            "title":"Panel Discussion on current state and future path of multimodal AI applications",
+            "description": ""
+        },
+        {
             "date": "2024-08-12",
             "event_title": "AI in Production Meetup Berlin",
             "title":"They upgrade their RAG systems with this one weird trick. Vector DB companies hate them!",
