@@ -7,7 +7,7 @@
             "img": "https://storage.googleapis.com/hello-jp-resources/images/graphrag-archi.png",
             "technologies": ["Gemini", "Cloud Run", "PubSub", "Python", "Firestore", "GCP", "Langfuse"],
             "link": "https://github.com/jakobap/graphrag-light",
-            "link_description": "https://storage.cloud.google.com/hello-jp-resources/images/einfach-vergabe-screenshot.png"
+            "link_description": "GitHub"
         },
         {
             "project_title": "graph2nosql",
